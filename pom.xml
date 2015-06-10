@@ -7,11 +7,30 @@
   </parent>
   <artifactId>invoice-server</artifactId>
   
-    <scm>
-  	<url>https://github.com/raghunadhparlapalli/mavengitsample</url>
-    <developerConnection>scm:git:git@github.com:raghunadhparlapalli/mavengitsample.git</developerConnection>
-    <connection>scm:git:git@github.com:raghunadhparlapalli/mavengitsample.git</connection>
- 	<tag>branch</tag>
-  </scm>
-  
+	<!-- Source code Repository configuration -->
+	<scm>
+		<url>https://github.com/raghu-organization/invoice-client1</url>
+		<developerConnection>scm:git:git@github.com:raghu-organization/invoice-client1.git</developerConnection>
+		<connection>scm:git:git@github.com:raghu-organization/invoice-client1.git</connection>
+		<tag>branch</tag>
+	</scm>
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.jgit</groupId>
+			<artifactId>org.eclipse.jgit</artifactId>
+			<version>4.0.0.201505050340-m2</version>
+		</dependency>
+	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>invoice-server</id>
+			<url>http://localhost:7092/nexus/content/repositories/invoice-server</url>
+		</repository>
+		<snapshotRepository>
+			<id>invoice-server-snapshots</id>
+			<name>invoice-server-snapshots</name>
+			<url>http://localhost:7092/nexus/content/repositories/invoice-server-snapshots/</url>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
