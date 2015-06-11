@@ -14,7 +14,6 @@
 		<url>https://github.com/raghu-organization/invoice-server</url>
 		<developerConnection>scm:git:git@github.com:raghu-organization/invoice-server.git</developerConnection>
 		<connection>scm:git:git@github.com:raghu-organization/invoice-server.git</connection>
-    <tag>invoice-server-tag-0.12</tag>
   </scm>
 	<build>
 		<pluginManagement>
