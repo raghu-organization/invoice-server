@@ -7,14 +7,14 @@
   </parent>
   <artifactId>invoice-server</artifactId>
   <packaging>jar</packaging>
-  <version>0.6-SNAPSHOT</version>
+  <version>0.7</version>
   
   <!-- Source code Repository configuration -->
 	<scm>
 		<url>https://github.com/raghu-organization/invoice-server</url>
 		<developerConnection>scm:git:git@github.com:raghu-organization/invoice-server.git</developerConnection>
 		<connection>scm:git:git@github.com:raghu-organization/invoice-server.git</connection>
-    <tag>tag-0.6</tag>
+    <tag>tag-0.7</tag>
   </scm>
 	<build>
 		<pluginManagement>
