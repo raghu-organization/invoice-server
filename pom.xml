@@ -7,7 +7,7 @@
   </parent>
   <artifactId>invoice-server</artifactId>
   <packaging>jar</packaging>
-  <version>0.12</version>
+  <version>0.12-SNAPSHOT</version>
   
   <!-- Source code Repository configuration -->
 	<scm>
