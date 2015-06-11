@@ -6,7 +6,6 @@
     <version>0.1-SNAPSHOT</version>
   </parent>
   <artifactId>invoice-server</artifactId>
-  <version>0.1-SNAPSHOT</version>
   <!-- Source code Repository configuration -->
 	<scm>
 		<url>https://github.com/raghu-organization/invoice-client1</url>
