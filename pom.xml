@@ -3,7 +3,7 @@
   <parent>
     <groupId>mymaven.multimodule.invoiceproject</groupId>
     <artifactId>invoice-project</artifactId>
-    <version>0.1</version>
+    <version>0.1-SNAPSHOT</version>
   </parent>
   <artifactId>invoice-server</artifactId>
   <!-- Source code Repository configuration -->
@@ -44,5 +44,15 @@
 				<enabled>true</enabled>
 			</releases>
 		</repository>
+		<repository>
+			<id>invoice-client1-snapshots</id>
+			<url>http://localhost:7092/nexus/content/repositories/invoice-client1-snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>		
 	</repositories>	
 </project>
