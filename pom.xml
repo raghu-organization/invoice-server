@@ -3,17 +3,29 @@
   <parent>
     <groupId>mymaven.multimodule.invoiceproject</groupId>
     <artifactId>invoice-project</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
   </parent>
   <artifactId>invoice-server</artifactId>
-  
-	<!-- Source code Repository configuration -->
+  <!-- Source code Repository configuration -->
 	<scm>
 		<url>https://github.com/raghu-organization/invoice-client1</url>
 		<developerConnection>scm:git:git@github.com:raghu-organization/invoice-client1.git</developerConnection>
 		<connection>scm:git:git@github.com:raghu-organization/invoice-client1.git</connection>
-		<tag>branch</tag>
+		<tag>invoicee-server-tag-0.2</tag>
 	</scm>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.4</version>
+					<configuration>
+						<autoVersionSubmodules>true</autoVersionSubmodules>
+					</configuration>
+				</plugin>
+			</plugins>		
+		</pluginManagement>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.jgit</groupId>
@@ -21,16 +33,26 @@
 			<version>4.0.0.201505050340-m2</version>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
+	<repositories>
 		<repository>
-			<id>invoice-server</id>
-			<url>http://localhost:7092/nexus/content/repositories/invoice-server</url>
+			<id>invoice-client1</id>
+			<url>http://localhost:7092/nexus/content/repositories/invoice-client1</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
 		</repository>
-		<snapshotRepository>
-			<id>invoice-server-snapshots</id>
-			<name>invoice-server-snapshots</name>
-			<url>http://localhost:7092/nexus/content/repositories/invoice-server-snapshots/</url>
-			<uniqueVersion>true</uniqueVersion>
-		</snapshotRepository>
-	</distributionManagement>
+		<repository>
+			<id>invoice-client1-snapshots</id>
+			<url>http://localhost:7092/nexus/content/repositories/invoice-client1-snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>		
+	</repositories>	
 </project>
