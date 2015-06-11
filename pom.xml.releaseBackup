@@ -6,14 +6,13 @@
     <version>0.1</version>
   </parent>
   <artifactId>invoice-server</artifactId>
-  <version>0.6-SNAPSHOT</version>
+  <version>0.4-SNAPSHOT</version>
   <packaging>jar</packaging>
   <!-- Source code Repository configuration -->
 	<scm>
 		<url>https://github.com/raghu-organization/invoice-server</url>
 		<developerConnection>scm:git:git@github.com:raghu-organization/invoice-server.git</developerConnection>
 		<connection>scm:git:git@github.com:raghu-organization/invoice-server.git</connection>
-    <tag>HEAD</tag>
   </scm>
 	<build>
 		<pluginManagement>
@@ -56,15 +55,5 @@
 				<enabled>false</enabled>
 			</releases>
 		</repository>		
-	</repositories>
-	<distributionManagement>
-		<repository>
-			<id>invoice-server</id>
-			<url>http://localhost:7092/nexus/content/repositories/invoice-server</url>
-		</repository>
-		<snapshotRepository>
-			<id>invoice-server</id>
-			<url>http://localhost:7092/nexus/content/repositories/invoice-server-snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>		
+	</repositories>	
 </project>
