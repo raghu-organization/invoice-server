@@ -44,15 +44,5 @@
 				<enabled>true</enabled>
 			</releases>
 		</repository>
-		<repository>
-			<id>invoice-client1-snapshots</id>
-			<url>http://localhost:7092/nexus/content/repositories/invoice-client1-snapshots</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>		
 	</repositories>	
 </project>
