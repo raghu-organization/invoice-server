@@ -3,7 +3,7 @@
   <parent>
     <groupId>invoice-project</groupId>
     <artifactId>invoice-project</artifactId>
-    <version>0.1</version>
+    <version>0.9-SNAPSHOT</version>
   </parent>
   <artifactId>invoice-server</artifactId>
   <packaging>jar</packaging>
@@ -38,7 +38,7 @@
 	</dependencies>
 	<repositories>
 		<repository>
-			<id>invoice-client1</id>
+			<id>invoice-server</id>
 			<url>http://localhost:7092/nexus/content/repositories/invoice-server</url>
 			<snapshots>
 				<enabled>false</enabled>
@@ -48,7 +48,7 @@
 			</releases>
 		</repository>
 		<repository>
-			<id>invoice-client1-snapshots</id>
+			<id>invoice-server-snapshots</id>
 			<url>http://localhost:7092/nexus/content/repositories/invoice-server-snapshots</url>
 			<snapshots>
 				<enabled>true</enabled>
@@ -64,7 +64,7 @@
 			<url>http://localhost:7092/nexus/content/repositories/invoice-server</url>
 		</repository>
 		<snapshotRepository>
-			<id>invoice-server</id>
+			<id>invoice-server-snapshots</id>
 			<url>http://localhost:7092/nexus/content/repositories/invoice-server-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>		
